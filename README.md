@@ -1,12 +1,6 @@
-# first-android-apps
-
-
-
-
-
-
-# 2018年04月03日22:18:52
-### TextView ui布局拖拽
+# FIRST-ANDROID-APPS
+## 2018年04月03日22:18:52
+### TextView UI布局的使用
 ### 模拟器运行
 
-# create time 2018年04月03日22:16:41
+> create time 2018年04月03日22:16:41
