@@ -13,16 +13,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         FrameLayout frameLayout = findViewById(R.id.myLayout);
         final RabbitView rabbit = new RabbitView(MainActivity.this);
         rabbit.setOnTouchListener(new View.OnTouchListener(){
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
 
-                rabbit.bitmapX = motionEvent.getX();
-                rabbit.bitmapY = motionEvent.getY();
-                rabbit.invalidate();
+                switch (motionEvent.getAction()){
+                    case MotionEvent.ACTION_DOWN :
+                        rabbit.setDow(motionEvent);
+                        break;
+                    case MotionEvent.ACTION_UP :
+                        break;
+                    case MotionEvent.ACTION_MOVE :
+                        rabbit.setMove(motionEvent);
+                        break;
+                }
                 return true;
             }
         });
