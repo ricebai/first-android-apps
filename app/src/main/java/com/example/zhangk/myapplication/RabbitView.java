@@ -13,8 +13,8 @@ public class RabbitView extends View{
 
     private float bitmapX ;
     private float bitmapY ;
-    private float spaceX;
-    private float spaceY;
+    private float spaceX = 0;
+    private float spaceY = 0;
     private Bitmap bitmap;
 
     public RabbitView(Context context) {
@@ -30,17 +30,13 @@ public class RabbitView extends View{
         super.onDraw(canvas);
 
         Paint paint = new Paint();
-        canvas.drawBitmap(bitmap, bitmapX, bitmapY, paint);
+        canvas.drawBitmap(bitmap, bitmapX - spaceX, bitmapY - spaceY, paint);
 
         if(bitmap.isRecycled()){
             bitmap.recycle();
         }
     }
 
-    public void setSize(float x, float y){
-        bitmapX = x;
-        bitmapY = y;
-    }
 
     public void setMove(MotionEvent motionEvent) {
         bitmapX = motionEvent.getX();
@@ -49,6 +45,16 @@ public class RabbitView extends View{
     }
 
     public void setDow(MotionEvent motionEvent) {
-        spaceX = 
+        spaceX = motionEvent.getX() - bitmapX;
+        spaceY = motionEvent.getY() - bitmapY;
+        Log.i("dow", spaceX+", " + spaceY);
+    }
+
+    public void setUp(){
+        bitmapX = bitmapX - spaceX;
+        bitmapY = bitmapY - spaceY;
+
+        spaceX = 0;
+        spaceY = 0;
     }
 }

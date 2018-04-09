@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
                         rabbit.setDow(motionEvent);
                         break;
                     case MotionEvent.ACTION_UP :
+                        rabbit.setUp();
                         break;
                     case MotionEvent.ACTION_MOVE :
                         rabbit.setMove(motionEvent);
