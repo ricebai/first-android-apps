@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">first-apps</string>
+    <string name="rabbit_view">rabbit_view</string>
+    <string name="app_title">FIRST-APPS</string>
+    <string name="back">返回</string>
+
 </resources>
