@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RabbitActivity"></activity>
+        <activity android:name=".RabbitActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

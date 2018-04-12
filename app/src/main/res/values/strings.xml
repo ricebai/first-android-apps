@@ -3,5 +3,8 @@
     <string name="rabbit_view">rabbit_view</string>
     <string name="app_title">FIRST-APPS</string>
     <string name="back">返回</string>
+    <string name="login_view">LOGIN_VIEW</string>
+    <string name="login_name">用户名</string>
+    <string name="login_pwd">密码</string>
 
 </resources>

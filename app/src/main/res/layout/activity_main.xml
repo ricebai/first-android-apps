@@ -18,9 +18,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/background_light"
         android:elevation="0dp"
         android:onClick="showRabbitView"
         android:text="@string/rabbit_view" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:onClick="showLoginView"
+        android:text="@string/login_view" />
 
 </LinearLayout>
