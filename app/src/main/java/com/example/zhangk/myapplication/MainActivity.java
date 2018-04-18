@@ -26,4 +26,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent =new Intent(MainActivity.this,LoginActivity.class);
         startActivity(intent);
     }
+
+    public void showFrameLayout(View view){
+        Intent intent = new Intent(MainActivity.this, FrameActivity.class);
+        startActivity(intent);
+    }
 }

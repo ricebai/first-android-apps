@@ -6,5 +6,9 @@
     <string name="login_view">LOGIN_VIEW</string>
     <string name="login_name">用户名</string>
     <string name="login_pwd">密码</string>
+    <string name="frame_view">frame_view</string>
+    <string name="Red">红色</string>
+    <string name="green">绿色</string>
+    <string name="orange">橙色</string>
 
 </resources>

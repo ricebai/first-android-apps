@@ -37,4 +37,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void backClick(View view) {
+        finish();
+    }
 }

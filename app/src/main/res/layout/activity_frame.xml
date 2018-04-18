@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameActivity">
+
+    <TextView
+        android:layout_width="331dp"
+        android:layout_height="331dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/Red" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/green" />
+
+    <TextView
+        android:layout_width="163dp"
+        android:layout_height="173dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/orange" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/frame_view"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="backClick"
+        android:text="@string/back" />
+</FrameLayout>
