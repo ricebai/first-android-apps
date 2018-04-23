@@ -31,4 +31,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, FrameActivity.class);
         startActivity(intent);
     }
+
+    public void showRelativeView(View view){
+        Intent intent = new Intent(MainActivity.this, RelativeLayout.class);
+        startActivity(intent);
+    }
 }

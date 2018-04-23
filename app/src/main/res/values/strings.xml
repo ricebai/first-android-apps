@@ -10,5 +10,7 @@
     <string name="Red">红色</string>
     <string name="green">绿色</string>
     <string name="orange">橙色</string>
+    <string name="relative_msg">发现有Widget的新版本，您想现在就安装吗？</string>
+    <string name="relative_view">relative_view</string>
 
 </resources>
