@@ -19,7 +19,8 @@
         <activity android:name=".RabbitActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".FrameActivity" />
-        <activity android:name=".RelativeLayout"></activity>
+        <activity android:name=".RelativeLayout" />
+        <activity android:name=".TableActivity"></activity>
     </application>
 
 </manifest>
